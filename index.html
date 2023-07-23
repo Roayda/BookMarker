@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/images.ico">
+    <title>Bookmark</title>
+
+    <!--& ----------------------------------------------------------------------- -->
+    <!--^                              Google Fonts                               -->
+    <!--& ----------------------------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- &--------------------------- BootStrap CSS Link ---------------------------- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- &------------------------- FontAwsome CSS Link ------------------------- -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- &--------------------------- CSS Style Link ---------------------------- -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body>
+    
+    <main class="vh-100">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <h1 class="py-3 position-relative z-0 ">Bookmarker</h1>
+            <div class="book__content w-100 d-flex justify-content-center flex-column align-items-center mt-5 py-4 p-4 gap-4 ">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site__name d-flex justify-content-center flex-column w-100">
+                    <label for="bookName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+    
+                    <input type="text" placeholder="Bookmark Name" class="form-control" id="bookName" oninput="nameChecker()">
+                </div>
+                <div class="site__url d-flex justify-content-center flex-column w-100">
+                    <label for="bookUrl" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>
+                        Site URL
+                    </label>
+                    <input type="text" placeholder="Website URL" class="form-control " id="bookUrl" oninput="urlChecker()">
+                </div>
+                <button class="btn px-5 btnSubmit border border-2 " id="btnSubmit" onclick="add()">Submit</button>
+            </div>
+            
+                <table class="table mt-4 text-center bg-light">
+                    <thead>
+                      <tr><th class="text-capitalize">index</th>
+                      <th class="text-capitalize">Website Name</th>
+                      <th class="text-capitalize">Visit</th>
+                      <th class="text-capitalize">Delete</th>
+                    </tr></thead>
+                    <tbody id="tableInfo"></tbody>
+                  </table>
+            
+        </div>
+        
+    </main>
+    
+
+
+
+    <!-- &------------------------- Sweet Alert JS Link ------------------------- -->
+    <script src="./js/sweetalert.min.js"></script>
+    
+    <!-- &---------------------------- Index JS Link ---------------------------- -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

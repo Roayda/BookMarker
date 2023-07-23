@@ -1,0 +1,117 @@
+/* ~------------------------------ General Style ----------------------------- */
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+::selection {
+    background-color:#09c;
+    color: #352e28;
+  }
+  body
+  {
+    color:#2b4b75;
+    font-family:'PT Sans Caption', sans-serif;;
+  }
+
+/* ~----------------------------- BookMark Style ----------------------------- */
+main{
+    background-color: bisque;
+}
+.book__content
+{
+    border-top: 2px black dotted;
+    border-bottom: 2px black dotted;
+}
+h1
+{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    
+   
+}
+
+h1::before
+{
+    position:absolute;
+    bottom: 15px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height:25%;
+    background-color:rgb(106, 195, 225);
+    z-index: -1;
+   transition: height 400ms;
+}
+h1:hover::before 
+{
+    height: 50%;
+}
+h2
+{
+    font-family: 'Righteous', cursive ;
+    background: -webkit-linear-gradient( left, #2b4b75, #09c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+
+}
+th
+{
+    color: #2b4b75 !important;
+  
+}
+.btnSubmit
+{
+    background-color: #c9803c !important;
+    font-size: 25px;
+    color:#2b4b75 !important;
+    transition: all 300ms;
+  
+}
+.btnSubmit:hover
+{
+    background-color: #ee8d33 !important;
+}
+label
+{
+    font-size: 20px;
+}
+.btn__visit
+{
+    background-color: #9eb23b !important;
+    color:white !important;
+    transition: all 300ms;
+
+
+}
+.btn__delete
+{
+
+    background-color: #eb1d36 !important;
+    color:white !important;
+    transition: all 300ms;
+}
+.btn__visit:hover
+{
+    background-color: #c5de25 !important;
+}
+.btn__delete:hover
+{
+    background-color: red !important;
+    
+}
+.swal-text
+{
+    color:green;
+   font-size: 15px;
+   line-height: 30px;
+}
+.swal-title
+{
+    font-size: 20px;
+    color:red;
+
+}
